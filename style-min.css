@@ -1020,7 +1020,8 @@ li {
   display: block;
   width: 60%;
   margin: auto;
-  font-weight: 700;
+  color: #000;
+  font-weight: 600;
   font-size: 18px;
   font-style: italic;
   line-height: 1.8;
@@ -1029,6 +1030,7 @@ li {
 .address-contact p {
   text-align: center;
   margin: 0;
+  font-weight: 600;
 }
 .col-sm-6 {
   margin-bottom: 30px;
