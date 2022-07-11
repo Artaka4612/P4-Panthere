@@ -652,6 +652,7 @@ h4 {
 }
 .bgc-dark-slate-blue {
   background-color: #161d31;
+  /*background-color: #364577;*/
 }
 .bgc-atomic-tangerine {
   background-color: #792b06;
@@ -719,12 +720,12 @@ h4 {
     max-width: 100%;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -1005,7 +1006,7 @@ li {
   margin-bottom: 10px;
 }
 .cart {
-  width: 405px;
+  width: 305px;
   margin: auto;
   border: 2px solid #fff;
   margin-bottom: 30px;
@@ -1027,6 +1028,19 @@ li {
   line-height: 1.8;
   text-align: center;
 }
+@media (max-width: 320px) {
+  .address-contact {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .address-contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 .address-contact p {
   text-align: center;
   margin: 0;
@@ -1035,11 +1049,18 @@ li {
 .col-sm-6 {
   margin-bottom: 30px;
 }
-@media (max-width: 700px) {
+@media (max-width: 320px) {
+  .col-sm-6 img {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 700px) {
   .col-sm-6 img {
     margin-left: 50px;
   }
 }
+
 .contact-text {
   text-shadow: none;
 }
